@@ -1,51 +1,26 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
- <meta charset="utf-8">
- <meta name="viewport" content="width=device-width, initial-scale=1">
- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
- <script src="https://cdn.jsdelivr.net/npm/vega@4.0.0-rc.2"></script>
-
-<style>
-.body {margin-top: 10px;
-	padding-top: 10px;
-		}
-    /* Set height of the grid so .sidenav can be 100% (adjust if needed) */
-.row.content {height: 1500px}
-        
-        /* Set gray background color and 100% height */
-.sidenav {
-	background-color: #f1f1f1;
-	height: 100%;
-					        }
-	    
-	    /* Set black background color, white text and some padding */
-	    footer {
-		          background-color: #555;
-				        color: white;
-						      padding: 15px;
-							          }
-	        
-	        /* On small screens, set height to 'auto' for sidenav and grid */
-	        @media screen and (max-width: 767px) {
-			      .sidenav {
-				              height: auto;
-						              padding: 15px;
-								            }
-			            .row.content {height: auto;} 
-				        }
-</style>	 
-</head>
-
-
 <body>
+<script>
+$(document).ready(function(){
+	$('[data-toggle="popover"]').popover();
+});
+</script>
+	
  <div class="container-fluid">
  <div class="row content">
  <div class="col-sm-3 sidenav">
  <ul class="nav nav-pills nav-stacked">
-<li class="active"><a href="#section1">My Clients</a></li>
+
+<li class="active">
+	<a href="#demo" data-toggle="collapse">My Clients</a></li>
+	 <div id="demo" class="collapse">
+		 <ul>
+			 <li><h4><small>
+			    <a href="#" data-toggle="popover" title="Franck" data-content="Franck Description">Franck</a>
+			 </small></h4></li>
+			 <li><h4><small>
+			    <a href="#" data-toggle="popover" title="Michael" data-content="Michael Description">Michael</a>
+			 </small></h4></li>
+	</div>
         <li><a href="#section2">My Schedule</a></li>
         <li><a href="#section3">My Goals</a></li>
             </ul><br>
@@ -62,16 +37,34 @@
 
 
 
-<div class="col-sm-6"><br/>
- <div class="panel panel-default">
-  <div class="panel-heading">
-   <img src="https://scontent.fyto1-1.fna.fbcdn.net/v/t1.0-9/13344751_1121746611225956_5471160502810973598_n.jpg?_nc_cat=0&oh=437a742ab3ffdc06b181ae5ad38e4375&oe=5B7EEFFA" class="img-rounded" width="140 px"/>
-  </div>
- </div>
-                                     <br><br>
+<div class="col-sm-9"><br/>
+ <div class="panel panel-primary">
+	<div class="panel-heading">
+	   <h4>   Warwick Fulke</h4>
+	</div><!--end panel-heading-->
+	
+	<div class ="panel-body">
+	<div class="container">
+		<img src="https://scontent.fyto1-1.fna.fbcdn.net/v/t1.0-9/13344751_1121746611225956_5471160502810973598_n.jpg?_nc_cat=0&oh=437a742ab3ffdc06b181ae5ad38e4375&oe=5B7EEFFA" class="img-rounded" width="120 px"/>
+	 </div><!--container-->
+	</div><!--panel-body-->
+
+
+	<div class="panel-footer">	
+	<div class="btn-group btn-group-justified">
+	<a href="#" class="btn btn-success">Welcome Client</a>
+	<a href="#" class="btn btn-success">Schedule Session</a>
+	<a href="#" class="btn btn-success">Communicate</a>
+	<a href="#" class="btn btn-success">Offer  Services</a>
+	 </div><!--btn-group btn-group-justified-->
+	</div><!--panel-footer-->
+
+ </div><!--panel-->
+                                    <br><br>
                         
     <span class="glyphicon glyphicon-time"></span>  
-    <h4><small>Friday, 8th June 10AM <mark>Training Franck</mark></small></h4>
+    <h4><small>Friday, 8th June 10AM Training 
+    <a href="#" data-toggle="popover" title="Franck" data-content="Franck Description">Franck</a></small></h4>
 		  <hr>
 		<h5><span class="glyphicon glyphicon-star"></span>Training Objectives</h5>
 				      <h5><span class="label label-success">Lorem</span></h5><br>

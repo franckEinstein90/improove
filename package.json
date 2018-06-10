@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/franckEinstein90/improove/issues"
   },
-  "homepage": "https://github.com/franckEinstein90/improove#readme"
+  "homepage": "https://github.com/franckEinstein90/improove#readme",
+  "dependencies": {
+    "mysql": "^2.15.0"
+  }
 }
